@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1618684456805,
+  "lastUpdate": 1618855335045,
   "repoUrl": "https://github.com/kvignesh1420/io",
   "entries": {
     "Tensorflow-IO Benchmarks": [
@@ -4756,6 +4756,170 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00004926771586120052",
             "extra": "mean: 909.6848494602873 usec\nrounds: 744"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "yong.tang.github@outlook.com",
+            "name": "Yong Tang",
+            "username": "yongtang"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cf031c9e457806851a1e1e37961f945b75e9b0f6",
+          "message": "Fix Kafka test setup issue by adding wait period (#1370)\n\n* Update to 6.1.1\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\n* Update add listener\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\nUpdate\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\nUpdate\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\n* Skip pulsar on Linux\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\nDisable pulsar test on Linux\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\n* Add missing pytest import\r\n\r\nSigned-off-by: Yong Tang <yong.tang.github@outlook.com>\r\n\r\n* add missing sys import\r\n\r\nCo-authored-by: Vignesh Kothapalli <vikoth18@in.ibm.com>",
+          "timestamp": "2021-04-19T07:26:22-07:00",
+          "tree_id": "1f9ec9df7eca6abe86134b9f03bafb15b7177143",
+          "url": "https://github.com/kvignesh1420/io/commit/cf031c9e457806851a1e1e37961f945b75e9b0f6"
+        },
+        "date": 1618855333668,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[mnist]",
+            "value": 4.276603579291062,
+            "unit": "iter/sec",
+            "range": "stddev: 0.011691146941549116",
+            "extra": "mean: 233.83041740000863 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[lmdb]",
+            "value": 26.681734052113125,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006862636684546298",
+            "extra": "mean: 37.478823454534904 msec\nrounds: 11"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[audio[wav]]",
+            "value": 1.1790689376865893,
+            "unit": "iter/sec",
+            "range": "stddev: 0.06327270136563537",
+            "extra": "mean: 848.126829600028 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[audio[wav|s24]]",
+            "value": 1.2368047224303234,
+            "unit": "iter/sec",
+            "range": "stddev: 0.05991380013757442",
+            "extra": "mean: 808.5350758000004 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[audio[flac]]",
+            "value": 1.2410035464531182,
+            "unit": "iter/sec",
+            "range": "stddev: 0.054736020497981853",
+            "extra": "mean: 805.7994699999654 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[audio[vorbis]]",
+            "value": 0.4161631730389772,
+            "unit": "iter/sec",
+            "range": "stddev: 0.4529408877863194",
+            "extra": "mean: 2.402903631999993 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[audio[mp3]]",
+            "value": 0.41562885326547966,
+            "unit": "iter/sec",
+            "range": "stddev: 0.27420017161327076",
+            "extra": "mean: 2.405992731600031 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[hdf5]",
+            "value": 0.6748059774336759,
+            "unit": "iter/sec",
+            "range": "stddev: 0.024020359753306082",
+            "extra": "mean: 1.4819074421999858 sec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[numpy]",
+            "value": 3.420113147917365,
+            "unit": "iter/sec",
+            "range": "stddev: 0.05674129302929343",
+            "extra": "mean: 292.3879874000477 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[numpy[structure]]",
+            "value": 1.9230806516345216,
+            "unit": "iter/sec",
+            "range": "stddev: 0.06601408592776045",
+            "extra": "mean: 519.9989917999801 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[numpy[file/tuple]]",
+            "value": 1.8000257608166161,
+            "unit": "iter/sec",
+            "range": "stddev: 0.06178399089331681",
+            "extra": "mean: 555.5476048000173 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[numpy[file/dict]]",
+            "value": 1.8306156063468655,
+            "unit": "iter/sec",
+            "range": "stddev: 0.07554109945388883",
+            "extra": "mean: 546.2643257999844 msec\nrounds: 5"
+          },
+          {
+            "name": "tests/test_io_dataset.py::test_io_dataset_benchmark[sql]",
+            "value": 23.863185376531792,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0016051495690120232",
+            "extra": "mean: 41.90555385717484 msec\nrounds: 7"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[audio[wav]]",
+            "value": 5079.492306924451,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000009594985973144445",
+            "extra": "mean: 196.87006881313368 usec\nrounds: 1366"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[audio[wav|s24]]",
+            "value": 3660.0955501235762,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000019975725875583674",
+            "extra": "mean: 273.2169109536599 usec\nrounds: 2392"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[audio[flac]]",
+            "value": 981.6777824183786,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000022507542431624103",
+            "extra": "mean: 1.0186641868745205 msec\nrounds: 899"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[audio[vorbis]]",
+            "value": 503.4161305369817,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000033227646829602",
+            "extra": "mean: 1.9864282039062284 msec\nrounds: 461"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[audio[mp3]]",
+            "value": 1465.2959276692955,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00004164268621960751",
+            "extra": "mean: 682.4560016286972 usec\nrounds: 1229"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[hdf5]",
+            "value": 634.9863083603329,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00002723647736262682",
+            "extra": "mean: 1.5748371056727324 msec\nrounds: 388"
+          },
+          {
+            "name": "tests/test_io_tensor.py::test_io_tensor_benchmark[arrow]",
+            "value": 1052.901259168852,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000018791755158497143",
+            "extra": "mean: 949.7566759388136 usec\nrounds: 719"
           }
         ]
       }
